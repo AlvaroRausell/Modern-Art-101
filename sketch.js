@@ -1,5 +1,5 @@
 var points = [];
-var numPoints = 5;
+var numPoints = 20;
 var rstButton;
 var sliderNumPoints;
 var curveSlider;
@@ -9,7 +9,7 @@ function setup() {
   reset();
   rstButton = createButton("New Drawing");
   rstButton.mousePressed(reset);
-  sliderNumPoints = createSlider(2, 200, 5, 1);
+  sliderNumPoints = createSlider(2, 200, numPoints, 1);
   curveSlider = createSlider(0, 1, 0.5, 0.01);
   curveSlider.input(reset);
 }
