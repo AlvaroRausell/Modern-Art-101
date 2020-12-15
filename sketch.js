@@ -5,7 +5,7 @@ var sliderNumPoints;
 var curveSlider;
 var changed = true;
 function setup() {
-  createCanvas(3*windowWidth/4,3*windowHeight/4);
+  createCanvas(windowWidth/3,windowWidth/3);
   reset();
   rstButton = createButton("New Drawing");
   rstButton.mousePressed(reset);
